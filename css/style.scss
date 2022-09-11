@@ -45,6 +45,7 @@ nav {
         display: inline-flex;
         gap: 5%;
         li{
+            padding: 15px;
             font-family: $poppins-font-family;
             font-size: 18px;
             font-weight: 600;
@@ -59,7 +60,7 @@ nav {
 .h:hover {
     color: black;
     background-color: $main-color;
-    padding: 15px;
+    
 }
 .hire {
         border: none;
@@ -232,7 +233,6 @@ p {
     display: grid;
     grid-template-columns: auto auto auto;
     .flex {
-        width: 80%;
         border-radius: 20px;
         padding: 50px 20px;
         background-color: white;
@@ -313,10 +313,11 @@ footer {
 
     ul {
         margin: 0;
+        padding: 0;
     }
     li {
-        width: 60%;
         margin: 10px;
+        margin-left: 0;
         display: flex;
         font-size: 18px;
         font-family: $sans-font-family;
@@ -324,7 +325,10 @@ footer {
         color: rgba(123, 123, 123, 1);
         
     }
-    li:first-child{
+    .li{
+        
+        font-family: $sans-font-family;
+        display: flex;
         margin-bottom: 40px;
         font-size: 22px;
         font-weight: 700;
@@ -339,7 +343,8 @@ footer {
     .clm {
         padding-top: 100px;
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        gap: 15%;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
     }
     .creative {
         font-family: $sans-font-family;
